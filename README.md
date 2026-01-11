@@ -11,7 +11,6 @@ Computational verification code for the paper:
 
 > **Binary Convolution Theory: A Structural Approach to Perfect Numbers**  
 > Masamichi Iizumi, Tamaki Iizumi  
-> INTEGERS 26 (2026)
 
 ## 🚀 Quick Start (Google Colab)
 
