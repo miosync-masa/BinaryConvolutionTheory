@@ -2,12 +2,20 @@
 
 [![Paper](https://img.shields.io/badge/Paper-INTEGERS%2026%20(2026)-blue)](https://github.com/miosync-masa/BinaryConvolutionTheory)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-green)](https://python.org)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/13if8har3oL5I9bE0WbeUqSuAcnqrM442?usp=sharing)
 [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
 Computational verification code for the paper:
 
 > **Binary Convolution Theory: A Structural Approach to Perfect Numbers**  
-> Masamichi Iizumi, INTEGERS 26 (2026)
+> Masamichi Iizumi, Tamaki Iizumi  
+> INTEGERS 26 (2026)
+
+## 🚀 Quick Start (Google Colab)
+
+**Run all verifications instantly in your browser:**
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/13if8har3oL5I9bE0WbeUqSuAcnqrM442?usp=sharing)
 
 ## Overview
 
@@ -24,15 +32,15 @@ Binary Convolution Theory (BCT) provides a novel framework for studying the mult
 ```bash
 git clone https://github.com/miosync-masa/BinaryConvolutionTheory.git
 cd BinaryConvolutionTheory
+pip install -e .
 ```
-
-No external dependencies required (pure Python 3.8+).
 
 ## Repository Structure
 
 ```
 BinaryConvolutionTheory/
 ├── README.md
+├── setup.py
 ├── src/
 │   ├── core/
 │   │   ├── __init__.py
@@ -52,10 +60,11 @@ BinaryConvolutionTheory/
 │       └── remaining_lemmas_theorems.py    # Lemmas 1-3, Thm 11(a), 12, 13
 ```
 
-## Quick Start
+## Usage
 
 ```python
-from src.core import H, C, L, popcount, is_bct_perfect, abundance_ratio
+from src.core.binary_utils import bin_seq, bin_str, popcount, is_fermat
+from src.core.bct_invariants import H, C, L, is_bct_perfect, sigma, abundance_ratio
 
 # Binary Convolution Height
 print(H(3, 5))   # 1 (orthogonal)
@@ -254,35 +263,17 @@ For all BCT-perfect odd composite n: σ(n)/n < 2
 Each theorem module can be run standalone:
 
 ```bash
-# Verify Theorems 1-2
-python src/theorems/thm1_2_upper_bound.py
-
-# Verify Theorem 3
-python src/theorems/thm3_equality_condition.py
-
-# Verify Theorems 4-5 (Mersenne)
-python src/theorems/thm4_5_mersenne.py
-
-# Verify Theorem 6 (Fermat)
-python src/theorems/thm6_fermat_resonance.py
-
-# Verify Theorem 7 & Proposition 5
-python src/theorems/thm7_prop5_sweep.py
-
-# Verify Theorem 8 (Even Perfect)
-python src/theorems/thm8_even_perfect.py
-
-# Verify Lemma 4 & Theorem 9 (Fermat Primes)
-python src/theorems/lemma4_thm9_fermat.py
-
-# Verify Theorem 10 (Structure)
-python src/theorems/thm10_structure.py
-
-# Verify Theorem 11(b) & Conjecture 1 (MAIN RESULT!)
-python src/theorems/thm11_conjecture1_abundance.py
-
-# Verify Remaining Lemmas & Theorems (Lemmas 1-3, Thm 11a, 12, 13)
-python src/theorems/remaining_lemmas_theorems.py
+# Run all verifications
+python -m theorems.thm1_2_upper_bound
+python -m theorems.thm3_equality_condition
+python -m theorems.thm4_5_mersenne
+python -m theorems.thm6_fermat_resonance
+python -m theorems.thm7_prop5_sweep
+python -m theorems.thm8_even_perfect
+python -m theorems.lemma4_thm9_fermat
+python -m theorems.thm10_structure
+python -m theorems.thm11_conjecture1_abundance
+python -m theorems.remaining_lemmas_theorems
 ```
 
 ## Core API
@@ -328,7 +319,7 @@ All verifications use ranges matching or exceeding those in the paper's Table 4.
 ```bibtex
 @article{iizumi2026bct,
   title={Binary Convolution Theory: A Structural Approach to Perfect Numbers},
-  author={Iizumi, Masamichi},
+  author={Iizumi, Masamichi and Iizumi, Tamaki},
   journal={INTEGERS},
   volume={26},
   year={2026}
@@ -341,8 +332,8 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ## Author
 
-**Masamichi Iizumi**
-**Tamaki Iizumi**
+**Masamichi Iizumi**  
+**Tamaki Iizumi**  
 Miosync, Inc., Tokyo, Japan  
 m.iizumi@miosync.email
 
