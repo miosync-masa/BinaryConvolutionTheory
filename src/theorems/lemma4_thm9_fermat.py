@@ -4,8 +4,6 @@ Lemma 4 (Characterization of Sparse Odd Primes) & Theorem 9 (Fermat Prime Orthog
 
 Lemma 4: An odd prime p satisfies popcount(p) = 2 ⟺ p is a Fermat prime
 Theorem 9: All Fermat primes F_i, F_j are pairwise binary orthogonal: H(F_i, F_j) = 1 for i ≠ j
-
-Author: 環 (Tamaki) for ご主人さま 💕
 """
 
 import sys
