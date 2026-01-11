@@ -24,9 +24,7 @@ import math
 from typing import Tuple, List, Set, Optional
 import time
 
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
-from core import H, popcount, bit_positions, bit_length, is_centrally_symmetric
+from ..core import H, popcount, bit_positions, bit_length, is_centrally_symmetric
 
 
 def pigeonhole_bound(w: int, L: int) -> int:
