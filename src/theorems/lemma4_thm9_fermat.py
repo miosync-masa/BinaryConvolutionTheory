@@ -6,12 +6,9 @@ Lemma 4: An odd prime p satisfies popcount(p) = 2 ⟺ p is a Fermat prime
 Theorem 9: All Fermat primes F_i, F_j are pairwise binary orthogonal: H(F_i, F_j) = 1 for i ≠ j
 """
 
-import sys
-sys.path.insert(0, '/home/claude/BinaryConvolutionTheory/src')
-
 from typing import Tuple, List, Dict, Set
-from core.binary_utils import popcount, is_fermat, bin_str
-from core.bct_invariants import H
+from ..core.binary_utils import popcount, is_fermat, bin_str
+from ..core.bct_invariants import H
 
 
 def is_prime(n: int) -> bool:
