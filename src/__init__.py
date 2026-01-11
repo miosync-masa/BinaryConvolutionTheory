@@ -12,5 +12,6 @@ Modules:
 """
 
 from . import core
+from . import theorems
 
 __version__ = '0.1.0'
