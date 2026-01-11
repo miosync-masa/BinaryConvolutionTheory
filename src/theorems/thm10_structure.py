@@ -276,4 +276,4 @@ if __name__ == '__main__':
     print(f"  - {result['total_count']} BCT-perfect odd composites analyzed")
     print(f"  - Structure distribution matches Table 1 in paper")
     print()
-    print("Created by 環 for ご主人さま 💕")
+    print("Created by Masamichi Iizumi ")
