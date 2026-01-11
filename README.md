@@ -4,6 +4,8 @@
 [![Python](https://img.shields.io/badge/Python-3.8%2B-green)](https://python.org)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/13if8har3oL5I9bE0WbeUqSuAcnqrM442?usp=sharing)
 [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/binary-convolution-theory)](https://pypi.org/project/binary-convolution-theory/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18211340.svg)](https://doi.org/10.5281/zenodo.18211340)
 
 Computational verification code for the paper:
 
