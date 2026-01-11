@@ -16,10 +16,7 @@ Paper verification range: n ∈ [2, 10^6]
 import sys
 from pathlib import Path
 
-# Add parent to path for imports
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
-from core import H, popcount, get_factorizations
+from ..core import H, popcount, get_factorizations
 from typing import Tuple, List, Optional
 import time
 
