@@ -17,7 +17,6 @@ Theorems:
 Tables:
 - Table 2: Classification of BCT-perfect numbers (Class A, B, C)
 
-Author: 環 (Tamaki) for ご主人さま 💕
 """
 
 import sys
