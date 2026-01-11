@@ -13,17 +13,15 @@ Computational verification for n < 10^5 shows the distribution given in Table 1.
 | p³       | 0.57%      | 1.4815      | 27 = 3³              |
 | Other    | 1.34%      | 1.7007      | 65535 = 3×5×17×257   |
 
-Author: 環 (Tamaki) for ご主人さま 💕
 """
 
 import sys
 import os
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from typing import Tuple, List, Dict
 from collections import defaultdict
-from core.binary_utils import popcount, bin_str
-from core.bct_invariants import is_bct_perfect, sigma, abundance_ratio
+from ..core.binary_utils import popcount, bin_str
+from ..core.bct_invariants import is_bct_perfect, sigma, abundance_ratio
 
 
 def is_prime(n: int) -> bool:
