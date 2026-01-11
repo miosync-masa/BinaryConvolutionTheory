@@ -43,7 +43,7 @@ pip install -e .
 ```
 
 ## Repository Structure
-
+```
 BinaryConvolutionTheory/
 ├── README.md
 ├── setup.py
