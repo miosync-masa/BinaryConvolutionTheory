@@ -40,10 +40,10 @@ pip install binary-convolution-theory
 git clone https://github.com/miosync-masa/BinaryConvolutionTheory.git
 cd BinaryConvolutionTheory
 pip install -e .
+```
 
 ## Repository Structure
 
-```
 BinaryConvolutionTheory/
 ├── README.md
 ├── setup.py
