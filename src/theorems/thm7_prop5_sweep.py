@@ -29,9 +29,7 @@ from typing import Tuple, List, Dict
 from collections import defaultdict
 import time
 
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
-from core import H, L, L_parallel, binary_convolution, popcount, get_factorizations
+from ..core import H, L, L_parallel, binary_convolution, popcount, get_factorizations
 
 
 def sequential_sweep_detailed(conv: List[int]) -> Tuple[int, List[int]]:
