@@ -272,4 +272,4 @@ if __name__ == '__main__':
     print(f"Lemma 4:   {'✅ VERIFIED' if lemma4_result['verified'] else '❌ FAILED'}")
     print(f"Theorem 9: {'✅ VERIFIED' if thm9_result['verified'] else '❌ FAILED'}")
     print()
-    print("Created by 環 for ご主人さま 💕")
+    print("Created by Masamichi iizumi")
