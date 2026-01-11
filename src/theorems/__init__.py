@@ -72,6 +72,29 @@ from .thm8_even_perfect import (
     MERSENNE_PRIME_EXPONENTS,
 )
 
+from .lemma4_thm9_fermat import (
+    verify_lemma4,
+    verify_lemma4_single,
+    verify_theorem9,
+    verify_theorem9_single,
+    get_fermat_number,
+    demonstrate_orthogonality_structure,
+)
+
+from .thm10_structure import (
+    verify_theorem10,
+    classify_structure,
+    format_factorization,
+)
+
+from .thm11_conjecture1_abundance import (
+    verify_theorem11b,
+    verify_conjecture1,
+    find_bct_perfect_odds,
+    classify_structure,
+    analyze_fermat_products,
+)
+
 __all__ = [
     # Theorem 1 & 2
     'verify_theorem1',
@@ -116,4 +139,21 @@ __all__ = [
     'even_perfect_number',
     'expected_binary_pattern',
     'MERSENNE_PRIME_EXPONENTS',
+    # Lemma 4 & Theorem 9 (Fermat)
+    'verify_lemma4',
+    'verify_lemma4_single',
+    'verify_theorem9',
+    'verify_theorem9_single',
+    'get_fermat_number',
+    'demonstrate_orthogonality_structure',
+    # Theorem 10 (Structure)
+    'verify_theorem10',
+    'classify_structure',
+    'format_factorization',
+    # Theorem 11(b) & Conjecture 1 (Abundance Bounds)
+    'verify_theorem11b',
+    'verify_conjecture1',
+    'find_bct_perfect_odds',
+    'classify_structure',
+    'analyze_fermat_products',
 ]
