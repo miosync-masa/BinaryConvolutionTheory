@@ -24,8 +24,7 @@ import math
 from typing import Tuple, List, Set, Optional
 import time
 
-from src.core.binary_utils import popcount, bit_positions, bit_length, is_centrally_symmetric
-from src.core.bct_invariants import H
+from src.core import H, popcount, bit_positions, bit_length, is_centrally_symmetric
 
 def pigeonhole_bound(w: int, L: int) -> int:
     """
