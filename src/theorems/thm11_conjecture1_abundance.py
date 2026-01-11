@@ -12,8 +12,8 @@ If Conjecture 1 holds, then any odd perfect number (if exists) must be BCT-imper
 
 from typing import Tuple, List, Dict, Optional
 from collections import defaultdict
-from ..core.binary_utils import popcount, bin_str
-from ..core.bct_invariants import is_bct_perfect, sigma, abundance_ratio
+from core.binary_utils import popcount, bin_str
+from core.bct_invariants import is_bct_perfect, sigma, abundance_ratio
 
 
 def is_prime(n: int) -> bool:
