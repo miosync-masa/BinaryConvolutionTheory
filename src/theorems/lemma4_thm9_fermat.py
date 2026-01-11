@@ -7,8 +7,8 @@ Theorem 9: All Fermat primes F_i, F_j are pairwise binary orthogonal: H(F_i, F_j
 """
 
 from typing import Tuple, List, Dict, Set
-from ..core.binary_utils import popcount, is_fermat, bin_str
-from ..core.bct_invariants import H
+from core.binary_utils import popcount, is_fermat, bin_str
+from core.bct_invariants import H
 
 
 def is_prime(n: int) -> bool:
