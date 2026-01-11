@@ -503,7 +503,8 @@ def verify_table2(max_n: int = 10**5) -> dict:
         print(f"\nOutside 3-class scheme (2^a × prime):")
         print(f"  Count: {len(class_D)}")
         print(f"  Examples: {[d['n'] for d in class_D[:10]]}")
-        print(f"  Structure: {[f\"{d['n']}=2^{d['a']}×{d['p']}\" for d in class_D[:5]]}")
+        structures = [f"{d['n']}=2^{d['a']}×{d['p']}" for d in class_D[:5]]
+        print(f"  Structure: {structures}")
         print("  ℹ️  These are BCT-perfect (H(2^a, prime)=1 by Lemma 2)")
         print("      but not included in paper's 3-class empirical scheme.")
     
