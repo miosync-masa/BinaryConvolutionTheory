@@ -13,22 +13,29 @@ from typing import List, Set, Tuple
 import numpy as np
 
 
-def bin_seq(n: int) -> np.ndarray:
+def bin_seq(n: int, msb_first: bool = False) -> np.ndarray:
     """
     Return binary representation as a coefficient sequence.
     
     For a positive integer n, returns (b_0, b_1, ..., b_k) where
     n = Σ b_i * 2^i and b_i ∈ {0, 1}.
     
+    NOTE: The paper uses LSB-first for definitions and computations,
+    but MSB-first for display (e.g., "1111111000000₂ = 8128").
+    
     Args:
         n: Positive integer
+        msb_first: If True, return MSB-first (for display).
+                   If False (default), return LSB-first (for computation).
         
     Returns:
-        numpy array of binary coefficients, LSB first
+        numpy array of binary coefficients
         
     Example:
-        >>> bin_seq(13)  # 13 = 1101 in binary
+        >>> bin_seq(13)  # LSB-first: 13 = 1*1 + 0*2 + 1*4 + 1*8
         array([1, 0, 1, 1])
+        >>> bin_seq(13, msb_first=True)  # MSB-first: human-readable
+        array([1, 1, 0, 1])
     """
     if n <= 0:
         raise ValueError("n must be a positive integer")
@@ -37,7 +44,32 @@ def bin_seq(n: int) -> np.ndarray:
     while n > 0:
         bits.append(n & 1)
         n >>= 1
-    return np.array(bits, dtype=np.int64)
+    
+    arr = np.array(bits, dtype=np.int64)
+    return arr[::-1] if msb_first else arr
+
+
+def bin_str(n: int) -> str:
+    """
+    Return binary representation as a string (MSB-first, human-readable).
+    
+    This matches the paper's display convention (e.g., "1111111000000").
+    
+    Args:
+        n: Positive integer
+        
+    Returns:
+        Binary string without '0b' prefix
+        
+    Example:
+        >>> bin_str(13)
+        '1101'
+        >>> bin_str(8128)  # Even perfect number
+        '1111111000000'
+    """
+    if n <= 0:
+        raise ValueError("n must be a positive integer")
+    return bin(n)[2:]
 
 
 def popcount(n: int) -> int:
