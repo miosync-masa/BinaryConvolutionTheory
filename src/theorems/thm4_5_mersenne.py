@@ -155,14 +155,15 @@ def verify_convolution_pattern(k: int) -> Tuple[bool, dict]:
     """
     m_k = mersenne(k)
     conv = binary_convolution(m_k, m_k)
+    conv_list = conv.tolist() 
     expected = expected_mersenne_convolution(k)
-    
-    matches = list(conv) == expected
+
+    matches = conv_list == expected 
     
     return matches, {
         'k': k,
         'M_k': m_k,
-        'convolution': list(conv),
+        'convolution': conv_list,
         'expected': expected,
         'matches': matches,
         'is_triangle': matches
