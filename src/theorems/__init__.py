@@ -95,6 +95,18 @@ from .thm11_conjecture1_abundance import (
     analyze_fermat_products,
 )
 
+from .remaining_lemmas_theorems import (
+    verify_lemma1,
+    verify_lemma2,
+    verify_lemma3,
+    verify_theorem11a,
+    verify_theorem12,
+    verify_theorem13,
+    verify_table2,
+    pigeonhole_lower_bound,
+    get_odd_part,
+)
+
 __all__ = [
     # Theorem 1 & 2
     'verify_theorem1',
@@ -156,4 +168,14 @@ __all__ = [
     'find_bct_perfect_odds',
     'classify_structure',
     'analyze_fermat_products',
+    # Remaining Lemmas & Theorems
+    'verify_lemma1',
+    'verify_lemma2',
+    'verify_lemma3',
+    'verify_theorem11a',
+    'verify_theorem12',
+    'verify_theorem13',
+    'verify_table2',
+    'pigeonhole_lower_bound',
+    'get_odd_part',
 ]
