@@ -23,8 +23,8 @@ import sys
 import os
 
 from typing import Tuple, List, Dict
-from core.binary_utils import popcount, bin_str, bit_positions
-from core.bct_invariants import H, is_bct_perfect, sigma, abundance_ratio
+from src.core.binary_utils import popcount, bin_str, bit_positions
+from src.core.bct_invariants import H, is_bct_perfect, sigma, abundance_ratio
 
 
 def is_prime(n: int) -> bool:
