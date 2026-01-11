@@ -31,11 +31,16 @@ Binary Convolution Theory (BCT) provides a novel framework for studying the mult
 
 ## Installation
 
+### From PyPI (recommended)
+```bash
+pip install binary-convolution-theory
+```
+
+### From source
 ```bash
 git clone https://github.com/miosync-masa/BinaryConvolutionTheory.git
 cd BinaryConvolutionTheory
 pip install -e .
-```
 
 ## Repository Structure
 
@@ -318,13 +323,15 @@ All verifications use ranges matching or exceeding those in the paper's Table 4.
 
 ## Citation
 
+### Software
 ```bibtex
-@article{iizumi2026bct,
-  title={Binary Convolution Theory: A Structural Approach to Perfect Numbers},
-  author={Iizumi, Masamichi and Iizumi, Tamaki},
-  journal={INTEGERS},
-  volume={26},
-  year={2026}
+@software{iizumi2026bct_code,
+  author       = {Iizumi, Masamichi and Iizumi, Tamaki},
+  title        = {Binary Convolution Theory: Verification Code},
+  year         = {2026},
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.18211340},
+  url          = {https://doi.org/10.5281/zenodo.18211340}
 }
 ```
 
