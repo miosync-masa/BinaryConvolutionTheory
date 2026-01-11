@@ -22,9 +22,7 @@ from pathlib import Path
 from typing import Tuple, List
 import numpy as np
 
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
-from core import H, C, binary_convolution, popcount, bin_str, is_mersenne
+from ..core import H, C, binary_convolution, popcount, bin_str, is_mersenne
 
 
 def mersenne(k: int) -> int:
