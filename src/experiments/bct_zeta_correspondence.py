@@ -20,7 +20,7 @@ Proposed Correspondence:
 
 WARNING: This is speculative research. Not peer-reviewed.
 
-Authors: Masamichi Iizumi, Tamaki Iizumi
+Authors: Masamichi Iizumi
 Date: 2026-01
 """
 
