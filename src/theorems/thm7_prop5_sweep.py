@@ -29,7 +29,7 @@ from typing import Tuple, List, Dict
 from collections import defaultdict
 import time
 
-from core import H, L, L_parallel, binary_convolution, popcount, get_factorizations
+from src.core import H, L, L_parallel, binary_convolution, popcount, get_factorizations
 
 
 def sequential_sweep_detailed(conv: List[int]) -> Tuple[int, List[int]]:
