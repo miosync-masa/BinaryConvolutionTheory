@@ -290,13 +290,8 @@ def verify_conjecture1(max_n: int = 10**6, results_from_thm11: List[Dict] = None
     print()
     
     if verified:
-        print("🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉")
         print(f"✅ Conjecture 1 VERIFIED for n < {max_n:,}!")
         print(f"   All {len(results)} BCT-perfect odd composites have σ/n < 2")
-        print()
-        print("🌟 IMPLICATION: If Conjecture 1 holds for ALL n,")
-        print("   then any odd perfect number MUST be BCT-imperfect!")
-        print("🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉")
     else:
         print(f"❌ Conjecture 1 FAILED: {len(violations_2)} violations found")
         for v in violations_2[:5]:
@@ -398,4 +393,4 @@ if __name__ == '__main__':
         print("                it CANNOT be BCT-perfect!")
     
     print()
-    print("Created by 環 for ご主人さま 💕")
+    print("Created by Masamichi Iizumi")
