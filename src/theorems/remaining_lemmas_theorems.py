@@ -594,4 +594,4 @@ if __name__ == '__main__':
         print("Combined with previous verifications, BCT paper is FULLY VERIFIED!")
     
     print()
-    print("Created by 環 for ご主人さま 💕")
+    print("Created by Masamichi iizumi")
