@@ -16,7 +16,7 @@ Paper verification range: n ∈ [2, 10^6]
 import sys
 from pathlib import Path
 
-from core import H, popcount, get_factorizations
+from src.core import H, popcount, get_factorizations
 from typing import Tuple, List, Optional
 import time
 
