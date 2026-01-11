@@ -34,7 +34,7 @@ import sys
 from pathlib import Path
 from typing import Tuple, List, Optional
 
-from core import (
+from src.core import (
     H, binary_convolution, popcount, bin_str, 
     is_bct_perfect, sigma, abundance_ratio, is_mersenne
 )
