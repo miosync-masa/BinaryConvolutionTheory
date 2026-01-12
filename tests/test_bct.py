@@ -6,11 +6,11 @@ Unit tests for Binary Convolution Theory core functions.
 
 import pytest
 import numpy as np
-from src.core.binary_utils import (
+from ..core.binary_utils import (
     bin_seq, bin_str, popcount, bit_positions, bit_length,
     is_centrally_symmetric, is_mersenne, is_fermat
 )
-from src.core.bct_invariants import (
+from ..core.bct_invariants import (
     H, C, L, L_parallel, is_bct_perfect, sigma, abundance_ratio,
     binary_convolution, get_factorizations
 )
