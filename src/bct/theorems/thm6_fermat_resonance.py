@@ -29,7 +29,7 @@ import sys
 from pathlib import Path
 from typing import Tuple, List
 
-from src.core import (
+from ..core import (
     H, C, L_parallel, binary_convolution, popcount, 
     bin_str, is_fermat, is_centrally_symmetric, bit_positions
 )
