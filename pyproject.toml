@@ -10,7 +10,7 @@ readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.8"
 authors = [
-    {name = "Masamichi Iizumi", email = "m.iizumi@miosync.email"},
+    {name = "Masamichi Iizumi, Tamaki Iizumi", email = "m.iizumi@miosync.email"},
 ]
 maintainers = [
     {name = "Masamichi Iizumi", email = "m.iizumi@miosync.email"},
