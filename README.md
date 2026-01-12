@@ -47,7 +47,9 @@ pip install -e .
 BinaryConvolutionTheory/
 ├── README.md
 ├── setup.py
-├── src/
+├──src/
+│   │
+│　　bct/
 │   ├── core/
 │   │   ├── __init__.py
 │   │   ├── binary_utils.py           # Binary representation utilities
@@ -69,8 +71,8 @@ BinaryConvolutionTheory/
 ## Usage
 
 ```python
-from src.core.binary_utils import bin_seq, bin_str, popcount, is_fermat
-from src.core.bct_invariants import H, C, L, is_bct_perfect, sigma, abundance_ratio
+from bct.core.binary_utils import bin_seq, bin_str, popcount, is_fermat
+from bct.core.bct_invariants import H, C, L, is_bct_perfect, sigma, abundance_ratio
 
 # Binary Convolution Height
 print(H(3, 5))   # 1 (orthogonal)
@@ -270,16 +272,16 @@ Each theorem module can be run standalone:
 
 ```bash
 # Run all verifications
-python -m theorems.thm1_2_upper_bound
-python -m theorems.thm3_equality_condition
-python -m theorems.thm4_5_mersenne
-python -m theorems.thm6_fermat_resonance
-python -m theorems.thm7_prop5_sweep
-python -m theorems.thm8_even_perfect
-python -m theorems.lemma4_thm9_fermat
-python -m theorems.thm10_structure
-python -m theorems.thm11_conjecture1_abundance
-python -m theorems.remaining_lemmas_theorems
+python -m core.theorems.thm1_2_upper_bound
+python -m core.theorems.thm3_equality_condition
+python -m core.theorems.thm4_5_mersenne
+python -m core.theorems.thm6_fermat_resonance
+python -m core.theorems.thm7_prop5_sweep
+python -m core.theorems.thm8_even_perfect
+python -m core.theorems.lemma4_thm9_fermat
+python -m core.theorems.thm10_structure
+python -m core.theorems.thm11_conjecture1_abundance
+python -m core.theorems.remaining_lemmas_theorems
 ```
 
 ## Core API
