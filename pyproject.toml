@@ -64,7 +64,7 @@ python_functions = ["test_*"]
 addopts = "-v --tb=short"
 
 [tool.coverage.run]
-source = ["src"]
+source = ["src/bct"]
 omit = ["*/tests/*"]
 
 [tool.coverage.report]
