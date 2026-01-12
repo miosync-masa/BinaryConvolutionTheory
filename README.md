@@ -272,16 +272,16 @@ Each theorem module can be run standalone:
 
 ```bash
 # Run all verifications
-python -m core.theorems.thm1_2_upper_bound
-python -m core.theorems.thm3_equality_condition
-python -m core.theorems.thm4_5_mersenne
-python -m core.theorems.thm6_fermat_resonance
-python -m core.theorems.thm7_prop5_sweep
-python -m core.theorems.thm8_even_perfect
-python -m core.theorems.lemma4_thm9_fermat
-python -m core.theorems.thm10_structure
-python -m core.theorems.thm11_conjecture1_abundance
-python -m core.theorems.remaining_lemmas_theorems
+python -m bct.theorems.thm1_2_upper_bound
+python -m bct.theorems.thm3_equality_condition
+python -m bct.theorems.thm4_5_mersenne
+python -m bct.theorems.thm6_fermat_resonance
+python -m bct.theorems.thm7_prop5_sweep
+python -m bct.theorems.thm8_even_perfect
+python -m bct.theorems.lemma4_thm9_fermat
+python -m bct.theorems.thm10_structure
+python -m bct.theorems.thm11_conjecture1_abundance
+python -m bct.theorems.remaining_lemmas_theorems
 ```
 
 ## Core API
