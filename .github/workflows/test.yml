@@ -33,13 +33,13 @@ jobs:
 
     - name: Run theorem verifications
       run: |
-        python -m theorems.thm1_2_upper_bound
-        python -m theorems.thm3_equality_condition
-        python -m theorems.thm4_5_mersenne
-        python -m theorems.thm6_fermat_resonance
-        python -m theorems.thm7_prop5_sweep
-        python -m theorems.thm8_even_perfect
-        python -m theorems.lemma4_thm9_fermat
-        python -m theorems.thm10_structure
-        python -m theorems.thm11_conjecture1_abundance
-        python -m theorems.remaining_lemmas_theorems
+        python -m bct.theorems.thm1_2_upper_bound
+        python -m bct.theorems.thm3_equality_condition
+        python -m bct.theorems.thm4_5_mersenne
+        python -m bct.theorems.thm6_fermat_resonance
+        python -m bct.theorems.thm7_prop5_sweep
+        python -m bct.theorems.thm8_even_perfect
+        python -m bct.theorems.lemma4_thm9_fermat
+        python -m bct.theorems.thm10_structure
+        python -m bct.theorems.thm11_conjecture1_abundance
+        python -m bct.theorems.remaining_lemmas_theorems
